@@ -19,8 +19,7 @@ class Risanje():
         #print(self.zacetnaTocka)
     def konec(self,event):
         self.koncnaTocka = (event.x, event.y)
-        self.canvas.create_oval(self.zacetnaTocka[0]-(self.zacetnaTocka[0]-self.koncnaTocka[0]),self.zacetnaTocka[1]-(self.zacetnaTocka[1]-self.koncnaTocka[1]),
-                                self.koncnaTocka[0], self.koncnaTocka[1])
+        self.canvas.create_oval(self.zacetnaTocka[0],self.zacetnaTocka[1],self.koncnaTocka[0], self.koncnaTocka[1])
         print(self.koncnaTocka)
 
 
